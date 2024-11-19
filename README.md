@@ -6,7 +6,7 @@
 This tool is designed to monitor OEM websites, identify CVEs (Common Vulnerabilities and Exposures) related to their equipment, and send email alerts with remediation steps. It ensures timely updates for vulnerabilities of critical and high severity.
 
 ---
-
+For prototype, refer to the [Demo photos](./Demo%20photos)
 ## Features
 - Automatically scrapes websites for vulnerabilities using CVE patterns.
 - Sends email alerts with detailed vulnerability reports and remediation suggestions.
