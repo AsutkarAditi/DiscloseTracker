@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  scraper_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"  
+    environment:
+      EMAIL_SENDER: your_email@example.com
+      EMAIL_PASSWORD: your_password
+    volumes:
+      - ./nmap_results.txt:/app/nmap_results.txt  # Mount nmap_results.txt if it changes often
+    depends_on:
+      - database
+
+  database:
+    image: sqlite3
+    command: ["sleep", "infinity"]  
+    volumes:
+      - db_data:/app/db
+
+volumes:
+  db_data:
