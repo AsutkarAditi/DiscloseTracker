@@ -25,6 +25,12 @@ In the current directory of project -
 ```bash
 pip install -r requirements.txt
 ```
+Environment Configuration:
+Ensure you have a .env file with the following credentials:
+```
+EMAIL_SENDER=<your_email>
+EMAIL_PASSWORD=<your_email_password>
+```
 Once all requirements are installed - 
 ```bash
 streamlit run scraper.py
